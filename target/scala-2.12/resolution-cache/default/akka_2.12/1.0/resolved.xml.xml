@@ -4,7 +4,7 @@
 		module="akka_2.12"
 		revision="1.0"
 		status="integration"
-		publication="20180310151650"
+		publication="20180403202339"
 	>
 		<description>
 		akka
@@ -34,8 +34,17 @@
 	<dependencies>
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.12.4" conf="scala-tool->default,optional(default)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.12.4" conf="scala-tool->default,optional(default);compile->default(compile)"/>
+		<dependency org="org.apache.kafka" name="kafka_2.12" rev="1.1.0" conf="compile->default(compile)"/>
+		<dependency org="org.apache.kafka" name="kafka-streams" rev="1.1.0" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.akka" name="akka-actor_2.12" rev="2.5.10" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.akka" name="akka-testkit_2.12" rev="2.5.10" conf="test->default(compile)"/>
+		<dependency org="com.typesafe.akka" name="akka-persistence_2.12" rev="2.5.11" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.akka" name="akka-remote_2.12" rev="2.5.11" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.akka" name="akka-cluster_2.12" rev="2.5.11" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.akka" name="akka-cluster-tools_2.12" rev="2.5.11" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.akka" name="akka-cluster-metrics_2.12" rev="2.5.11" conf="compile->default(compile)"/>
+		<dependency org="org.iq80.leveldb" name="leveldb" rev="0.7" conf="compile->default(compile)"/>
+		<dependency org="org.fusesource.leveldbjni" name="leveldbjni" rev="1.8" conf="compile->default(compile)"/>
 		<dependency org="org.scalatest" name="scalatest_2.12" rev="3.0.1" conf="test->default(compile)"/>
 	</dependencies>
 </ivy-module>

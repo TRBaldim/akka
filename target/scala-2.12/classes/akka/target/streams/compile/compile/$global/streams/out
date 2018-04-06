@@ -1,0 +1,228 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/ActorCreation.scala:5:13: object actor is not a member of package akka[0m
+[0m[[0m[31merror[0m] [0m[0mimport akka.actor.{Actor, ActorSystem, Props}[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/ActorCreation.scala:15:31: not found: type Actor[0m
+[0m[[0m[31merror[0m] [0m[0mclass MusicController extends Actor {[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/ActorCreation.scala:12:15: not found: value Props[0m
+[0m[[0m[31merror[0m] [0m[0m  def props = Props[MusicController][0m
+[0m[[0m[31merror[0m] [0m[0m              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/ActorCreation.scala:16:25: not found: type Receive[0m
+[0m[[0m[31merror[0m] [0m[0m  override def receive: Receive = {[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/ActorCreation.scala:32:27: not found: type Actor[0m
+[0m[[0m[31merror[0m] [0m[0mclass MusicPlayer extends Actor {[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/ActorCreation.scala:29:15: not found: value Props[0m
+[0m[[0m[31merror[0m] [0m[0m  def props = Props[MusicPlayer][0m
+[0m[[0m[31merror[0m] [0m[0m              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/ActorCreation.scala:33:25: not found: type Receive[0m
+[0m[[0m[31merror[0m] [0m[0m  override def receive: Receive = {[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/ActorCreation.scala:37:24: not found: value context[0m
+[0m[[0m[31merror[0m] [0m[0m      val controller = context.actorOf(MusicController.props, "controller")[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/ActorCreation.scala:46:16: not found: value ActorSystem[0m
+[0m[[0m[31merror[0m] [0m[0m  val system = ActorSystem("creation")[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Counter.scala:3:13: object actor is not a member of package akka[0m
+[0m[[0m[31merror[0m] [0m[0mimport akka.actor.{Actor, ActorIdentity, ActorRef, ActorSystem, Identify, PoisonPill, Props}[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Counter.scala:5:23: not found: type Actor[0m
+[0m[[0m[31merror[0m] [0m[0mclass Counter extends Actor {[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Counter.scala:10:25: not found: type Receive[0m
+[0m[[0m[31merror[0m] [0m[0m  override def receive: Receive = {[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Counter.scala:23:23: not found: type Actor[0m
+[0m[[0m[31merror[0m] [0m[0mclass Watcher extends Actor {[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Counter.scala:25:19: not found: type ActorRef[0m
+[0m[[0m[31merror[0m] [0m[0m  var counterRef: ActorRef = _[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Counter.scala:27:19: not found: value context[0m
+[0m[[0m[31merror[0m] [0m[0m  val selection = context.actorSelection("/user/counter")[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Counter.scala:31:25: not found: type Receive[0m
+[0m[[0m[31merror[0m] [0m[0m  override def receive: Receive = {[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Counter.scala:32:10: not found: value ActorIdentity[0m
+[0m[[0m[31merror[0m] [0m[0m    case ActorIdentity(_, Some(ref)) =>[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Counter.scala:34:10: not found: value ActorIdentity[0m
+[0m[[0m[31merror[0m] [0m[0m    case ActorIdentity(_, None) =>[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Counter.scala:40:16: not found: value ActorSystem[0m
+[0m[[0m[31merror[0m] [0m[0m  val system = ActorSystem("Actors-Paths")[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/HelloAkka.scala:3:13: object actor is not a member of package akka[0m
+[0m[[0m[31merror[0m] [0m[0mimport akka.actor.{Actor, ActorSystem, Props}[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/HelloAkka.scala:7:23: not found: type Actor[0m
+[0m[[0m[31merror[0m] [0m[0mclass Greeter extends Actor {[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/HelloAkka.scala:8:25: not found: type Receive[0m
+[0m[[0m[31merror[0m] [0m[0m  override def receive: Receive = {[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/HelloAkka.scala:14:16: not found: value ActorSystem[0m
+[0m[[0m[31merror[0m] [0m[0m  val system = ActorSystem("Hello-Akka")[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Monitoring.scala:3:13: object actor is not a member of package akka[0m
+[0m[[0m[31merror[0m] [0m[0mimport akka.actor.{ActorRef, ActorSystem, Props, Actor, Terminated}[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Monitoring.scala:5:38: not found: type Actor[0m
+[0m[[0m[31merror[0m] [0m[0mclass Ares(athena: ActorRef) extends Actor {[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Monitoring.scala:5:20: not found: type ActorRef[0m
+[0m[[0m[31merror[0m] [0m[0mclass Ares(athena: ActorRef) extends Actor {[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Monitoring.scala:7:5: not found: value context[0m
+[0m[[0m[31merror[0m] [0m[0m    context.watch(athena)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Monitoring.scala:14:25: not found: type Receive[0m
+[0m[[0m[31merror[0m] [0m[0m  override def receive: Receive = {[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Monitoring.scala:15:10: not found: value Terminated[0m
+[0m[[0m[31merror[0m] [0m[0m    case Terminated =>[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Monitoring.scala:16:7: not found: value context[0m
+[0m[[0m[31merror[0m] [0m[0m      context.stop(self)[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Monitoring.scala:16:20: not found: value self[0m
+[0m[[0m[31merror[0m] [0m[0m      context.stop(self)[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Monitoring.scala:20:22: not found: type Actor[0m
+[0m[[0m[31merror[0m] [0m[0mclass Athena extends Actor {[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Monitoring.scala:21:17: missing parameter type for expanded function[0m
+[0m[[0m[31merror[0m] [0m[0mThe argument types of an anonymous function must be fully known. (SLS 8.5)[0m
+[0m[[0m[31merror[0m] [0m[0mExpected type was: ?[0m
+[0m[[0m[31merror[0m] [0m[0m  def receive = {[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Monitoring.scala:24:7: not found: value context[0m
+[0m[[0m[31merror[0m] [0m[0m      context.stop(self)[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Monitoring.scala:24:20: not found: value self[0m
+[0m[[0m[31merror[0m] [0m[0m      context.stop(self)[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Monitoring.scala:30:16: not found: value ActorSystem[0m
+[0m[[0m[31merror[0m] [0m[0m  val system = ActorSystem("MonitorSystem")[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Monitoring.scala:32:23: not found: type ActorRef[0m
+[0m[[0m[31merror[0m] [0m[0m  private val athena: ActorRef = system.actorOf(Props[Athena], "athena")[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Monitoring.scala:33:21: not found: type ActorRef[0m
+[0m[[0m[31merror[0m] [0m[0m  private val ares: ActorRef = system.actorOf(Props(new Ares(athena)), "ares")[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Supervision.scala:3:13: object actor is not a member of package akka[0m
+[0m[[0m[31merror[0m] [0m[0mimport akka.actor.SupervisorStrategy.{Escalate, Restart, Resume, Stop}[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Supervision.scala:4:13: object actor is not a member of package akka[0m
+[0m[[0m[31merror[0m] [0m[0mimport akka.actor.{Actor, ActorRef, ActorSystem, OneForOneStrategy, OriginalRestartException, Props}[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Supervision.scala:8:25: not found: type Actor[0m
+[0m[[0m[31merror[0m] [0m[0mclass Aphrodite extends Actor {[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Supervision.scala:17:11: value preRestart is not a member of AnyRef[0m
+[0m[[0m[31merror[0m] [0m[0m    super.preRestart(reason, message)[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Supervision.scala:22:11: value postRestart is not a member of AnyRef[0m
+[0m[[0m[31merror[0m] [0m[0m    super.postRestart(reason)[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Supervision.scala:29:25: not found: type Receive[0m
+[0m[[0m[31merror[0m] [0m[0m  override def receive: Receive = {[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Supervision.scala:47:20: not found: type Actor[0m
+[0m[[0m[31merror[0m] [0m[0mclass Hera extends Actor {[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Supervision.scala:50:17: not found: type ActorRef[0m
+[0m[[0m[31merror[0m] [0m[0m  var childRef: ActorRef = _[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Supervision.scala:53:5: not found: value OneForOneStrategy[0m
+[0m[[0m[31merror[0m] [0m[0m    OneForOneStrategy(maxNrOfRetries = 10, withinTimeRange = 1 second) {[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Supervision.scala:53:23: not found: value maxNrOfRetries[0m
+[0m[[0m[31merror[0m] [0m[0m    OneForOneStrategy(maxNrOfRetries = 10, withinTimeRange = 1 second) {[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Supervision.scala:53:44: not found: value withinTimeRange[0m
+[0m[[0m[31merror[0m] [0m[0m    OneForOneStrategy(maxNrOfRetries = 10, withinTimeRange = 1 second) {[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Supervision.scala:54:32: not found: value Resume[0m
+[0m[[0m[31merror[0m] [0m[0m      case ResumeException  => Resume[0m
+[0m[[0m[31merror[0m] [0m[0m                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Supervision.scala:55:32: not found: value Restart[0m
+[0m[[0m[31merror[0m] [0m[0m      case RestartException => Restart[0m
+[0m[[0m[31merror[0m] [0m[0m                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Supervision.scala:56:32: not found: value Stop[0m
+[0m[[0m[31merror[0m] [0m[0m      case StopException    => Stop[0m
+[0m[[0m[31merror[0m] [0m[0m                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Supervision.scala:57:32: not found: value Escalate[0m
+[0m[[0m[31merror[0m] [0m[0m      case _: Exception     => Escalate[0m
+[0m[[0m[31merror[0m] [0m[0m                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Supervision.scala:61:16: not found: value context[0m
+[0m[[0m[31merror[0m] [0m[0m    childRef = context.actorOf(Props[Aphrodite], "Aphrodite")[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Supervision.scala:61:32: not found: value Props[0m
+[0m[[0m[31merror[0m] [0m[0m    childRef = context.actorOf(Props[Aphrodite], "Aphrodite")[0m
+[0m[[0m[31merror[0m] [0m[0m                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Supervision.scala:65:25: not found: type Receive[0m
+[0m[[0m[31merror[0m] [0m[0m  override def receive: Receive = {[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/Supervision.scala:74:16: not found: value ActorSystem[0m
+[0m[[0m[31merror[0m] [0m[0m  val system = ActorSystem("supervision")[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/TalkToActor.scala:6:13: object actor is not a member of package akka[0m
+[0m[[0m[31merror[0m] [0m[0mimport akka.actor.{Actor, ActorRef, ActorSystem, Props}[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/TalkToActor.scala:7:13: object pattern is not a member of package akka[0m
+[0m[[0m[31merror[0m] [0m[0mimport akka.pattern.ask[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/TalkToActor.scala:8:13: object util is not a member of package akka[0m
+[0m[[0m[31merror[0m] [0m[0mimport akka.util.Timeout[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/TalkToActor.scala:61:62: not found: type Actor[0m
+[0m[[0m[31merror[0m] [0m[0mclass Recorder(checker: ActorRef, storage: ActorRef) extends Actor {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/TalkToActor.scala:61:25: not found: type ActorRef[0m
+[0m[[0m[31merror[0m] [0m[0mclass Recorder(checker: ActorRef, storage: ActorRef) extends Actor {[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/TalkToActor.scala:61:44: not found: type ActorRef[0m
+[0m[[0m[31merror[0m] [0m[0mclass Recorder(checker: ActorRef, storage: ActorRef) extends Actor {[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/TalkToActor.scala:18:22: not found: type ActorRef[0m
+[0m[[0m[31merror[0m] [0m[0m  def props(checker: ActorRef, storage: ActorRef) = Props(new Recorder(checker, storage))[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/TalkToActor.scala:18:41: not found: type ActorRef[0m
+[0m[[0m[31merror[0m] [0m[0m  def props(checker: ActorRef, storage: ActorRef) = Props(new Recorder(checker, storage))[0m
+[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/TalkToActor.scala:18:53: not found: value Props[0m
+[0m[[0m[31merror[0m] [0m[0m  def props(checker: ActorRef, storage: ActorRef) = Props(new Recorder(checker, storage))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/TalkToActor.scala:46:23: not found: type Actor[0m
+[0m[[0m[31merror[0m] [0m[0mclass Checker extends Actor {[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/TalkToActor.scala:35:23: not found: type Actor[0m
+[0m[[0m[31merror[0m] [0m[0mclass Storage extends Actor {[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/TalkToActor.scala:39:25: not found: type Receive[0m
+[0m[[0m[31merror[0m] [0m[0m  override def receive: Receive = {[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/TalkToActor.scala:51:25: not found: type Receive[0m
+[0m[[0m[31merror[0m] [0m[0m  override def receive: Receive = {[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/TalkToActor.scala:54:7: not found: value sender[0m
+[0m[[0m[31merror[0m] [0m[0m      sender() ! BlackUser(user)[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/TalkToActor.scala:57:7: not found: value sender[0m
+[0m[[0m[31merror[0m] [0m[0m      sender() ! WhiteUser(user)[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/TalkToActor.scala:64:26: not found: value Timeout[0m
+[0m[[0m[31merror[0m] [0m[0m  implicit val timeout = Timeout(5 seconds)[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/TalkToActor.scala:66:25: not found: type Receive[0m
+[0m[[0m[31merror[0m] [0m[0m  override def receive: Receive = {[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/trbaldim/my_projects/akka/src/main/scala/akka/TalkToActor.scala:79:16: not found: value ActorSystem[0m
+[0m[[0m[31merror[0m] [0m[0m  val system = ActorSystem("talk-to-actor")[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m75 errors found[0m

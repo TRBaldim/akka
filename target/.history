@@ -1,1 +1,3 @@
 run
+;project {file:/Users/trbaldim/my_projects/akka/}akka; reload
+{file:/Users/trbaldim/my_projects/akka/}akka/compile
